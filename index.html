@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>
+        HCI Assignment-02
+    </title>
+
+    <div id="header">
+        <h1>Tyrone's Wishing Wall</h1>
+    </div>
+</head>
+
+<body>
+    <div class="form_box">
+        <div class="title">
+            <h2>What do you want to accomplish in the future?</h2>
+        </div>
+
+        <form action="action.php" method="post"> 
+            <div class="container">
+                <form>
+                    <fieldset>
+                        <legend><b>Student Info</b></legend>
+                        <label for="name">Enter your name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br><br>
+                        <label for="major">Enter your major:</label>
+                        <input type="text" id="major" name="major" required>
+                        <br><br>
+                    </fieldset>
+                </form>
+            </div>
+    
+            <div class="container">
+                <fieldset>
+                    <legend><b>Campus</b></legend>
+                    <label for="campus1"> 
+                        <input type="radio" id="campus1" name="campus" value="Senayan" required>
+                        Senayan
+                    </label>
+                    <label for="campus2"> 
+                        <input type="radio" id="campus2" name="campus" value="Bandung" required>
+                        Bandung
+                    </label>
+                    <label for="campus3"> 
+                        <input type="radio" id="campus3" name="campus" value="Malang" required>
+                        Malang
+                    </label>
+                    <label for="campus4"> 
+                        <input type="radio" id="campus4" name="campus" value="Kemanggisan" required>
+                        Kemanggisan
+                    </label>
+                    <label for="campus5"> 
+                        <input type="radio" id="campus5" name="campus" value="Anggrek" required>
+                        Anggrek
+                    </label>
+                    <label for="campus6"> 
+                        <input type="radio" id="campus6" name="campus" value="Bekasi" required>
+                        Bekasi
+                    </label>
+                    <label for="campus7"> 
+                        <input type="radio" id="campus7" name="campus" value="Alam Sutera" required>
+                        Alam Sutera
+                    </label>
+                </fieldset>
+            </div>
+    
+            <div class="container">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <th class="table_heading" colspan="2">What would you like to achieve?</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <textarea name="message" id="message" placeholder="Enter your message here..." cols="30" rows="7"></textarea>
+                                <br><br>
+                                <label for="date">When would you like this to be accomplished?</label>
+                                <input type="date" id="date" name="date" required>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+    
+            <div class="container">
+                <fieldset>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I acknowledge that I have no control over my message once submitted.
+                    </label>
+                    <input type="submit" value="Post Message">
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</body>
